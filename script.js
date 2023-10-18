@@ -6,8 +6,8 @@ let form = document.getElementById("form");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  let valueA = campoA.value;
-  let valueB = campoB.value;
+  let valueA = parseFloat(campoA.value);
+  let valueB = parseFloat(campoB.value);
   if (valueA > valueB) {
     textResult.innerHTML = `O valor A (${valueA}) é maior que o valor B (${valueB})`;
     textResult.style.color = "red";
