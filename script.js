@@ -11,17 +11,17 @@ form.addEventListener("submit", function (event) {
   if (valueA > valueB) {
     textResult.innerHTML = `O valor A (${valueA}) é maior que o valor B (${valueB})`;
     textResult.style.color = "red";
-    valueA = " ";
-    valueB = " ";
+    valueA = "";
+    valueB = "";
   } else if (valueB > valueA) {
     textResult.innerHTML = `O valor B (${valueB}) é maior que o valor A (${valueA})`;
     textResult.style.color = "green";
-    valueA = " ";
-    valueB = " ";
+    valueA = "";
+    valueB = "";
   } else {
     textResult.innerHTML = `O valor B (${valueB}) é igual que o valor A (${valueA})`;
     textResult.style.color = "red";
-    valueA = " ";
-    valueB = " ";
+    valueA = "";
+    valueB = "";
   }
 });
